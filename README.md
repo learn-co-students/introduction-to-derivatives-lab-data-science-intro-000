@@ -96,7 +96,8 @@ Now write a function called `output_at`, when passed a `list_of_terms` and a val
 
 ```python
 def output_at(list_of_terms, x_value):
-    return sum(list(map(lambda term: term_output(term, x_value), list_of_terms)))
+    ls = list(map(lambda term: term_output(term, x_value), list_of_terms))
+    return sum(ls)
 ```
 
 
