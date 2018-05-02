@@ -251,7 +251,8 @@ Let's try this for $f(x) = 4x + 15 $.  Round the result to three decimal places.
 
 ```python
 def derivative_of(list_of_terms, x_value, delta_x):
-    return delta_f(list_of_terms, x_value, delta_x) / delta_x
+    delta = delta_f(list_of_terms, x_value, delta_x)
+    return round(delta / delta_x, 3)
 ```
 
 
