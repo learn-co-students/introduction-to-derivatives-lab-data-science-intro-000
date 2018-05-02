@@ -1,0 +1,7 @@
+import Math
+term = (3,2)
+
+def term_output(term, input_value):
+    return Math.pow(input_value,term[1]) * term[0]
+    
+
